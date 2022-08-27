@@ -6,12 +6,14 @@ Requerimientos
 Node.js
 WebdriverIO
 Appium
+Allure Report
 
 ***
 Instalacion:
 
 "npm install"
 
+***
 Instalar reportes
 
 "npm install -g allure-commandline --save-dev"
