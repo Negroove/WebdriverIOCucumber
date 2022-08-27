@@ -46,4 +46,3 @@ npm run generate-report
 
 ```sh
 npm run open-report
-```

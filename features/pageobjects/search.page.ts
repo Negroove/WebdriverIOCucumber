@@ -1,26 +1,19 @@
-import { ChainablePromiseElement } from 'webdriverio';
+import { createTypeReferenceDirectiveResolutionCache } from "typescript";
+import { ChainablePromiseElement } from "webdriverio";
 
-import Page from './page';
+import Page from "./page";
 
-/**
- * sub page containing specific selectors and methods for a specific page
- */
 class SearchPage extends Page {
-    /**
-     * define selectors using getter methods
-     */
+  //Label que contiene los resultados
+  public get labelResults() {
+    return $("//*[@id='s0-16-18-5-5[0]']/div[4]");
+  }
 
-    public get labelResults () {
-        return $("//*[@id='s0-16-18-5-5[0]']/div[4]");
-    }
+  //Boton Android Nativo -- Consultar
+  public get closeInfoBar() {
+    return $("//android.widget.ImageButton[@content-desc='Close']");
+  }
 
-    public get closeInfoBar(){
-        return $("//android.widget.ImageButton[@content-desc='Close']")
-    }
-    
-    public async clickCloseinfoBar(){
-        await this.closeInfoBar.click();
-    }
 }
 
 export default new SearchPage();

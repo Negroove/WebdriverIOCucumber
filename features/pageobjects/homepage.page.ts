@@ -20,9 +20,6 @@ class HomePage extends Page {
         await this.buttonSearch.click();
     }
     
-    public open () {
-        return super.open();
-    }
 }
 
 export default new HomePage();
