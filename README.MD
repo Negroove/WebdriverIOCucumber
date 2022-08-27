@@ -1,48 +1,49 @@
-*** WebDriverIO Cucumber Challenge - Lucas Montoya ***
+# WebDriverIO Cucumber Challenge - Lucas Montoya
 
+## Requerimientos
+- Node.js
+- WebdriverIO
+- Appium
+- Allure Report
 
-Requerimientos
+## Instalacion
 
-Node.js
-WebdriverIO
-Appium
-Allure Report
+```sh
+npm install
+```
 
-***
-Instalacion:
+## Instalar reportes
 
-"npm install"
+```sh
+npm install -g allure-commandline --save-dev
+```
 
-***
-Instalar reportes
+## Para ejecutar el asistente de configuracion
 
-"npm install -g allure-commandline --save-dev"
+```sh
+npm init wdio .
+```
 
-***
-Para ejecutar el asistente de configuracion:
+## Para la ejecucion de los test
 
-"npm init wdio ."
+```sh
+npm run wdio
+```
 
-***
-Para la ejecucion de los test:
+## Para ejecutar limpieza de los reportes
 
-"npm run wdio"
-
-***
-Para ejecutar limpieza de los reportes:
-
+```sh
 npm run clean
+```
 
-***
-Para ejecutar la creacion de un reporte
+## Para ejecutar la creacion de un reporte
 
+```sh
 npm run generate-report
+```
 
-***
-Para ejecutar visualizacion del reeporte 
+## Para ejecutar visualizacion del reporte 
 
+```sh
 npm run open-report
-
-***
-
-
+```
