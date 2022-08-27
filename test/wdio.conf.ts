@@ -290,7 +290,7 @@ export const config: Options.Testrunner = {
    * @param {number}             result.duration  duration of scenario in milliseconds
    * @param {Object}             context          Cucumber World object
    */
-  afterStep: await function () {
+  afterStep: async function () {
         await browser.takeScreenshot();
   },
   /**
