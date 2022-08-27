@@ -88,6 +88,7 @@ export const config: Options.Testrunner = {
       deviceName: "Emulador 1",
       automationName: "UiAutomator2",
       browserName: "Chrome",
+      baseUrl: "http://localhost:4723/wd/hub"
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
       // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -135,7 +136,7 @@ export const config: Options.Testrunner = {
   connectionRetryTimeout: 120000,
   //
   // Default request retries count
-  connectionRetryCount: 3,
+  connectionRetryCount: 1,
   //
   // Test runner services
   // Services take over a specific job you don't want to take care of. They enhance
@@ -330,8 +331,9 @@ export const config: Options.Testrunner = {
    * @param {Array.<Object>} capabilities list of capabilities details
    * @param {Array.<String>} specs List of spec file paths that ran
    */
-  // after: function (result, capabilities, specs) {
-  // },
+   after: async function () {
+    await browser.deleteSession;
+   },
   /**
    * Gets executed right after terminating the webdriver session.
    * @param {Object} config wdio configuration object
