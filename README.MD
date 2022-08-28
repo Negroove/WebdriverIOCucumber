@@ -4,35 +4,27 @@
 - Node.js
 - WebdriverIO
 - Appium
-
-```sh
-En la carpeta drivers se encuentra la version compatible de ChromeDriver ( 83.0.4103.39) con el emulador utilizado.
-
-Pegar en la carpeta: 
-\EntrevistaTecnica\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
-
-
-```
-
 - Allure Report
 
 ## Instalacion
 
 ```sh
 npm install
-```
-
-## Instalar reportes
-
-```sh
 npm install -g allure-commandline --save-dev
 ```
 
-## Para ejecutar el asistente de configuracion
+## Compatibiliad con emulador android Pixel 4 - Android 11
+Pegar en la carpeta: 
+```sh
+
+\EntrevistaTecnica\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
+```
+El chromedriver proporcionado en el repositorio que se encuentra en la carpeta `drivers` 
 
 ```sh
-npm init wdio .
+EntrevistaTecnica\drivers
 ```
+y eliminar el que ya se encuentra
 
 ## Para la ejecucion de los test
 
