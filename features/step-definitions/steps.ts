@@ -1,5 +1,4 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import HomePage from '../pageobjects/homepage.page';
 
 import HomePage from '../pageobjects/homepage.page';
 import searchPage from '../pageobjects/search.page';
