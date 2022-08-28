@@ -4,6 +4,16 @@
 - Node.js
 - WebdriverIO
 - Appium
+
+```sh
+En la carpeta drivers se encuentra la version compatible de ChromeDriver ( 83.0.4103.39) con el emulador utilizado.
+
+Pegar en la carpeta: 
+\EntrevistaTecnica\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
+
+
+```
+
 - Allure Report
 
 ## Instalacion
