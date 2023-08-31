@@ -1,4 +1,4 @@
-# WebDriverIO Cucumber Challenge - Lucas Montoya
+# WebDriverIO Cucumber - Lucas Montoya
 
 ## Requerimientos
 - Node.js
