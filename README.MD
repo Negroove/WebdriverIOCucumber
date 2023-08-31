@@ -17,12 +17,12 @@ npm install -g allure-commandline --save-dev
 Pegar en la carpeta: 
 ```sh
 
-\EntrevistaTecnica\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
+\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
 ```
 El chromedriver proporcionado en el repositorio que se encuentra en la carpeta `drivers` 
 
 ```sh
-EntrevistaTecnica\drivers
+\drivers
 ```
 y eliminar el que ya se encuentra
 
